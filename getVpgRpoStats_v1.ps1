@@ -20,7 +20,7 @@ $CurrentDateTime = Get-Date
 
 #Get current time -5 minutes to pull statistics from last 5 minutes
 $ts = New-TimeSpan -Minutes 5
-$FiveMinutseAgo = Get-Date($CurrentDateTime-$ts) -Format O
+$FiveMinutesAgo = Get-Date($CurrentDateTime-$ts) -Format O
 
 #URL Encode time
 $FiveMinutesAgo = [System.Web.HttpUtility]::UrlEncode($FiveMinutesAgo) 
